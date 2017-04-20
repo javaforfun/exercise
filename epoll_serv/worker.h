@@ -1,6 +1,11 @@
-#ifndef _SERV_WORKER_H
-#define _SERV_WORKER_H
+#ifndef SERV_WORKER_H_
+#define SERV_WORKER_H_
+
+typedef struct {
+    int id;
+    int fd;
+} thread_arg;
 
 void *worker(void *arg);
 
-#endif
+#endif  // SERV_WORKER_H_
